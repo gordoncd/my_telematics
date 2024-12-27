@@ -24,8 +24,7 @@ class EventFindingAgent:
         self.response_llm = ChatOpenAI(
             temperature=0, model="gpt-4-mini", streaming=True)
         self.state = State(messages=[])
-        # send input data into Chroma DB
-        self.db = ChromaDB()  # NEED TO DO THIS
+        # send input data into csv database
 
         return state
 
